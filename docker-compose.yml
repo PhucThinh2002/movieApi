@@ -1,7 +1,7 @@
 services:
   be-compose:
     image: thinhdp307/image-db_api_movie:latest
-    container_name: cons-db_api_movie
+    container_name: const-db_api_movie
     ports:
       - "3070:4000"
     environment:
