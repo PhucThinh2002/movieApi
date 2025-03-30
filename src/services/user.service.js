@@ -35,6 +35,7 @@ const userService = {
       );
     }
 
+    
     const accessToken = req.headers["x-access-token"];
     if (!accessToken) {
       throw new UnauthorizationException(
