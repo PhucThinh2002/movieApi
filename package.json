@@ -1,0 +1,39 @@
+{
+  "name": "movieApi",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --watchAll",
+    "dev": "node server.js",
+    "start": "nodemon --env-file=.env server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "": "file:",
+    "@prisma/client": "^6.4.1",
+    "@types/jest": "^29.5.14",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "capston": "file:",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "expressjs": "file:",
+    "jest": "^29.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.5",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.7",
+    "prisma": "^6.1.0",
+    "socket.io": "^4.8.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "v": "^0.3.0"
+  }
+}
