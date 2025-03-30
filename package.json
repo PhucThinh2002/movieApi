@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --watchAll",
-    "dev": "node server.js",
-    "start": "nodemon --env-file=.env server.js"
+    "dev": "nodemon --env-file=.env server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",

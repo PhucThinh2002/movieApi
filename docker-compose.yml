@@ -1,0 +1,20 @@
+services:
+  be-compose:
+    image: thinhdp307/image-db_api_movie:latest
+    container_name: cons-db_api_movie
+    ports:
+      - "3070:4000"
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - ACCESS_TOKEN_SECRET=${ACCESS_TOKEN_SECRET}
+      - ACCESS_TOKEN_EXPIRED=${ACCESS_TOKEN_EXPIRED}
+      - REFRESH_TOKEN_SECRET=${REFRESH_TOKEN_SECRET}
+      - REFRESH_TOKEN_EXPIRED=${REFRESH_TOKEN_EXPIRED}
+
+  mysql-compose:
+    image: mysql
+    container_name: const-mysql_api_movie
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
