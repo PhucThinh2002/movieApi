@@ -1,4 +1,4 @@
-import datVeSwagger from "./Datve.swagger.js";
+import datVeSwagger from "./datve.swagger.js";
 import movieSwagger from "./movie.swagger.js";
 import rapSwagger from "./rap.swagger.js";
 import userSwagger from "./user.swagger.js";
