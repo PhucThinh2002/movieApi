@@ -8,8 +8,8 @@ import sendMail from "../common/nodemailer/send-mail.nodemailer.js";
 const userService = {
   layDanhSachLoaiNguoiDung: async () => {
     return await prisma.nguoiDung.findMany({
-      select: { loaiNguoiDung: true },
-      distinct: ["loaiNguoiDung"],
+      select: { loainguoidung: true },
+      distinct: ["loainguoidung"],
     });
   },
   login: async (req) => {
@@ -123,7 +123,7 @@ const userService = {
         email: true,
         soDt: true,
         hoTen: true,
-        loaiNguoiDung: true,
+        loainguoidung: true,
         createdAt: true,
         updatedAt: true,
       },
@@ -148,7 +148,7 @@ const userService = {
         taiKhoan: true,
         soDt: true,
         hoTen: true,
-        loaiNguoiDung: true,
+        loainguoidung: true,
         createdAt: true,
         updatedAt: true,
       },
@@ -169,7 +169,7 @@ const userService = {
         email: true,
         soDt: true,
         hoTen: true,
-        loaiNguoiDung: true,
+        loainguoidung: true,
         createdAt: true,
         updatedAt: true,
       },
@@ -189,7 +189,7 @@ const userService = {
         soDt: true,
         maNhom: true,
         hoTen: true,
-        loaiNguoiDung: true,
+        loainguoidung: true,
         createdAt: true,
         updatedAt: true,
       },
@@ -206,7 +206,7 @@ const userService = {
         soDt: true,
         maNhom: true,
         hoTen: true,
-        loaiNguoiDung: true,
+        loainguoidung: true,
         createdAt: true,
         updatedAt: true,
       },
@@ -230,7 +230,7 @@ const userService = {
         email,
         soDt,
         maNhom,
-        loaiNguoiDung,
+        loainguoidung: loaiNguoiDung,
         hoTen,
       },
     });
